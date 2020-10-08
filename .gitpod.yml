@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: stack test
+
+vscode:
+  extensions:
+    - haskell.haskell@1.1.0:Wt1BvkxTWaeCQD86YIN0fw==
+    - justusadam.language-haskell@3.3.0:uqgpHstOoamig+7LyFNNVw==
