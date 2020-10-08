@@ -28,12 +28,17 @@ dependencies:
 - vty
 - selda
 - selda-sqlite
-- tagsoup
 - req
+- modern-uri
 - bytestring
 - scalpel
 - regex-tdfa
 - hspec
+- aeson
+- aeson-pretty
+- directory
+- random
+- safe
 
 library:
   source-dirs: src

@@ -17,7 +17,6 @@ import           Network.HTTP.Req               ( runReq
                                                 , bsResponse
                                                 , responseBody
                                                 )
-import           Text.HTML.TagSoup
 
 bookListUrl = http "gutenberg.net.au" /: "plusfifty-n-z.html"
 
@@ -29,4 +28,3 @@ getBookLinks = runReq defaultHttpConfig $ do
   liftIO $ putStrLn $ "url" ++ (show bookListUrl)
   response <- req GET bookListUrl NoReqBody bsResponse mempty
   liftIO $ writeFile "book-website-html.txt" $ B.unpack $ responseBody response
-  -- liftIO $ print $ responseBody response
